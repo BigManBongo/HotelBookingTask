@@ -50,23 +50,24 @@ do
           }
         break;
 
-        case 3: //If user inputs option 4 then the function CancelARoom is called
+        case 3: //If user inputs option 3 then the function CancelARoom is called
           {
             call.CancelARoom();
           }
         break;
 
-        case 4: //If user inputs option 3 then the function displaySpecifiedFloor is called
+        case 4: //If user inputs option 4 then the function displaySpecifiedFloor is called
           {
             call.displaySpecifiedFloor();
           }
         break;
 
-        default: //If option 4 or an invalid option are input by the user then "Program Shutting Down" is displayed
+        default: //If option 5 or an invalid option are input by the user then "Program Shutting Down" is displayed
         System.out.println("Program Shutting Down");
+        System.exit(0);
         break;
     }
-  } while (menuChoice != 3);
+  } while (menuChoice != 5);
   scanner.close();
 }
 
